@@ -1,0 +1,20 @@
+2019-08-10 16:45:01,889 - /Users/nhy/PycharmProjects/t1/day3/atp/lib/parse_response.py[line:28] - DEBUG: key是error_code，运算的代码是3007 == 3006
+2019-08-10 16:45:01,890 - /Users/nhy/PycharmProjects/t1/day3/atp/lib/util.py[line:24] - DEBUG: 现在开始写报告了：文件名是 /Users/nhy/PycharmProjects/t1/day3/atp/cases/test-处女座测试用例.xlsx  内容：[["{'username': 'niuhanyang', 'passwd': 'aA123456'}", "{'error_code': 0, 'login_info': {'login_time': '20190810164501', 'sign': '28f1d36c3115b9dad8885caad74a218a', 'userId': 9786}}", '都通过啦', '通过'], ["{'username': '18599044075', 'passwd': '123456'}", "{'error_code': 3007, 'msg': '用户名/密码错误！'}", '都通过啦', '通过'], ["{'username': '14757443653', 'passwd': '123456'}", "{'error_code': 3007, 'msg': '用户名/密码错误！'}", 'key是error_code，运算的代码是3007 == 3006', '失败']]
+2019-08-10 16:45:01,896 - /Users/nhy/PycharmProjects/t1/day3/atp/lib/util.py[line:37] - DEBUG: 报告生成完成，文件名是/Users/nhy/PycharmProjects/t1/day3/atp/report/20190810164501_test-处女座测试用例.xls
+2019-08-10 16:45:02,191 - /Users/nhy/PycharmProjects/t1/day3/atp/lib/parse_response.py[line:28] - DEBUG: key是error_code，运算的代码是3007 == 3006
+2019-08-10 16:45:02,192 - /Users/nhy/PycharmProjects/t1/day3/atp/lib/util.py[line:24] - DEBUG: 现在开始写报告了：文件名是 /Users/nhy/PycharmProjects/t1/day3/atp/cases/test-处女座测试用例2.xlsx  内容：[["{'username': 'niuhanyang', 'passwd': 'aA123456'}", "{'error_code': 0, 'login_info': {'login_time': '20190810164501', 'sign': '28f1d36c3115b9dad8885caad74a218a', 'userId': 9786}}", '都通过啦', '通过'], ["{'username': '13121214237', 'passwd': '123456'}", "{'error_code': 3007, 'msg': '用户名/密码错误！'}", '都通过啦', '通过'], ["{'username': '15310226266', 'passwd': '123456'}", "{'error_code': 3007, 'msg': '用户名/密码错误！'}", 'key是error_code，运算的代码是3007 == 3006', '失败']]
+2019-08-10 16:45:02,195 - /Users/nhy/PycharmProjects/t1/day3/atp/lib/util.py[line:37] - DEBUG: 报告生成完成，文件名是/Users/nhy/PycharmProjects/t1/day3/atp/report/20190810164502_test-处女座测试用例2.xls
+2019-08-10 16:45:02,195 - /Users/nhy/PycharmProjects/t1/day3/atp/lib/util.py[line:42] - DEBUG: 开始发送邮件
+2019-08-10 16:45:03,002 - /Users/nhy/PycharmProjects/t1/day3/atp/lib/util.py[line:60] - ERROR: 发送邮件出错了，错误信息是:
+Traceback (most recent call last):
+  File "/Users/nhy/PycharmProjects/t1/day3/atp/lib/util.py", line 58, in send_mail
+    contents=content,attachments=file_name)
+  File "/anaconda3/lib/python3.6/site-packages/yagmail/sender.py", line 129, in send
+    return self._attempt_send(addresses['recipients'], msg.as_string())
+  File "/anaconda3/lib/python3.6/site-packages/yagmail/sender.py", line 135, in _attempt_send
+    result = self.smtp.sendmail(self.user, recipients, msg_string)
+  File "/anaconda3/lib/python3.6/smtplib.py", line 888, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (554, b'DT:SPM 163 smtp5,HdxpCgDHz1cOhE5dDjaiAA--.7814S2 1565426702,please see http://mail.163.com/help/help_spam_16.htm?ip=61.48.185.66&hostid=smtp5&time=1565426702')
+
+2019-08-10 16:45:03,006 - /Users/nhy/PycharmProjects/t1/day3/atp/bin/start.py[line:44] - DEBUG: 运行完成
